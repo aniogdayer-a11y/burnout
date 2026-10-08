@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7ef">
+  <meta name="description" content="A little reset space. Eight gentle reminders and a simple self-care quiz to help you pause, rest, and grow.">
+  <title>Pause & Bloom — Your Self-Care Quiz</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script src="bonk.js" defer></script>
+  <script src="quiz.js" defer></script>
+  <script src="fresh-start.js" defer></script>
+</head>
+<body class="quiz-page">
+  <a class="skip-link" href="#quiz">Skip to quiz</a>
+  <header class="site-header"><a class="brand" href="index.html"><span class="brand-flower" aria-hidden="true">✿</span> pause & bloom<span class="brand-dot">.</span></a><a class="back-link" href="reminders.html">← Back to reminders</a></header>
+  <dialog class="bonk-dialog" id="bonk-dialog" aria-labelledby="bonk-title" aria-describedby="bonk-message">
+    <button class="bonk-close" id="bonk-close" aria-label="Close and try again" autofocus>×</button>
+    <h2 id="bonk-title">Oops, a little bonk!</h2>
+    <div id="bonk-art" class="bonk-art"></div>
+    <p id="bonk-message">It’s okay to get it wrong. You can try again.</p>
+    <a class="bonk-credit" href="https://tenor.com/view/bonk-gif-13392138837084579216" target="_blank" rel="noopener noreferrer">Bonk GIF · Tenor</a>
+  </dialog>
+  <dialog class="bonk-dialog prize-dialog" id="prize-dialog" aria-labelledby="prize-title" aria-describedby="prize-message">
+    <button class="bonk-close" id="prize-close" aria-label="Close reward" autofocus>×</button>
+    <h2 id="prize-title">You got it right!</h2>
+    <div id="prize-art"></div>
+    <p id="prize-message">A little reward for choosing kindness for yourself.</p>
+    <button class="button" id="prize-continue">Continue</button>
+  </dialog>
+  <main>
+    <nav class="journey" aria-label="Your reset journey"><a href="reminders.html"><span>02</span> Pause & reflect</a><span class="journey-line" aria-hidden="true"></span><span aria-current="step"><span>03</span> A little check-in</span></nav>
+    <section class="quiz-section section-shell" id="quiz" aria-labelledby="quiz-title">
+      <div class="section-heading"><span class="eyebrow">CHECK IN WITH YOURSELF</span><h1 id="quiz-title">How well do you know<br>your <em>reset routine?</em></h1><p>Let’s see how you would take care of yourself during stressful situations.<br>Don’t worry, this is just a little reminder!</p></div>
+      <div class="quiz-with-companion">
+        <aside class="quiz-companion" aria-label="Your quiz companion">
+          <div class="companion-bubble">Take your time.<br>I’m right here with you.</div>
+          <div class="tenor-animation"><div class="tenor-gif-embed" data-postid="22112407" data-share-method="host" data-aspect-ratio="1.06667" data-width="100%"><a href="https://tenor.com/view/tkthao219-bubududu-panda-gif-22112407">Tkthao219 Bubududu Sticker</a> from <a href="https://tenor.com/search/tkthao219-stickers">Tkthao219 Stickers</a></div></div>
+          <p class="companion-paused">Your panda friend is taking a quiet pause.</p>
+        </aside>
+      <div class="quiz-card" id="quiz-card"><div class="quiz-meta"><span id="question-count">Question 1 of 5</span><span>one gentle step at a time</span></div><progress id="quiz-progress" value="0" max="5" aria-label="Questions completed"></progress><h3 id="question" tabindex="-1"></h3><div id="answers" aria-labelledby="question"></div><p id="feedback" class="feedback" role="status" aria-live="polite"></p><div class="quiz-bottom"><span>Your well-being is worth making time for.</span><button class="button" id="next" disabled>Next question →</button></div></div></div>
+    </section>
+    <section class="closing section-shell" id="closing" hidden aria-labelledby="closing-title"><div class="closing-gif"><div class="tenor-animation"><div class="tenor-gif-embed" data-postid="3201890809137310537" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/stray-kids-skz-mer1k4-stray-kids-reaction-kpop-gif-3201890809137310537">Stray Kids Skz GIF</a> from <a href="https://tenor.com/search/stray+kids-gifs">Stray Kids GIFs</a></div></div><p class="closing-gif-paused">Celebration animation hidden while animations are paused.</p></div><span class="eyebrow">A LITTLE KINDNESS GOES A LONG WAY</span><h2 id="closing-title" tabindex="-1">You did well!<br><em>I’m proud of you!</em></h2><h3>So, now you know how to reset yourself, right?</h3>
+      <div class="closing-copy">
+        <p>Take a moment to reflect on the things that are causing you stress right now. Think about all the achievements you've accomplished, the challenges you've faced, and how far you've come.</p>
+        <p>Whenever you feel exhausted, remind yourself that you're putting effort into something meaningful. You're currently in a stage where you're learning, improving, and growing into a better version of yourself.</p>
+        <p>It's normal to experience burnout, stress, and overwhelming emotions, especially when you're working hard to achieve your goals. But remember, you also need to give yourself time to rest and recharge.</p>
+        <p>What matters most is that you don't lose your sense of direction. It's okay to feel tired and uncertain sometimes, but don't let those feelings stop you from moving forward. You don't have to figure everything out in one day. Just take things one step at a time, and always remember why you started.</p>
+      </div><div class="closing-actions"><button class="button" id="fresh-start">start fresh tomorrow?</button><a class="restart-link" id="restart" href="index.html">Start my reset again</a></div></section>
+    <noscript><p class="noscript">Please enable JavaScript to take the self-care quiz.</p></noscript>
+  </main>
+  <dialog id="fresh-dialog" class="fresh-dialog" aria-labelledby="fresh-title">
+    <header class="fresh-header"><div><span class="eyebrow">A LITTLE LOVE FROM YOUR INTERNET BESTIE</span><h2 id="fresh-title">Good vibes incoming…</h2></div><button class="button" id="fresh-close" autofocus>Close all ✕</button></header>
+    <div id="fresh-messages" class="fresh-messages"></div>
+    <p class="fresh-signoff">Tomorrow is a fresh page. Pahinga ka muna tonight.</p>
+  </dialog>
+  <footer><a class="brand" href="index.html">✿ pause & bloom.</a><p>A softer corner of the internet.</p><span>Made with a little love, for days that need it.</span><button id="motion-toggle" class="motion-toggle" aria-pressed="false">Pause animations</button></footer>
+</body>
+</html>

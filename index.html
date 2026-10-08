@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7ef">
+  <meta name="description" content="A little reset space. Eight gentle reminders and a simple self-care quiz to help you pause, rest, and grow.">
+  <title>Pause & Bloom — Your Little Reset Space</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script src="timer.js" defer></script>
+</head>
+<body class="calm-page">
+  <a class="skip-link" href="#calm">Skip to calming timer</a>
+  <header class="site-header"><a class="brand" href="#calm"><span class="brand-flower" aria-hidden="true">✿</span> pause & bloom<span class="brand-dot">.</span></a></header>
+  <main>
+    <section class="calm-space" id="calm" aria-labelledby="calm-title">
+      <span class="eyebrow">01 / 03 · A MOMENT TO ARRIVE</span>
+      <h1 id="calm-title">A little pause.<br><em>Just for you.</em></h1>
+      <p class="calm-intro">You don’t have to figure it all out right now.<br>Settle in, soften your shoulders, and take 25 seconds for yourself.</p>
+      <div class="timer-orbit" id="timer-orbit">
+        <div class="breath-halo" aria-hidden="true"></div>
+        <svg class="timer-ring" viewBox="0 0 280 280" aria-hidden="true"><circle class="ring-track" cx="140" cy="140" r="129"/><circle class="ring-progress" id="ring-progress" cx="140" cy="140" r="129" pathLength="100"/></svg>
+        <div class="timer-center"><span class="timer-flower" aria-hidden="true">✿</span><span id="timer-display" role="timer" aria-label="Time remaining" aria-live="off">00:25</span><span id="breath-cue">a small moment of stillness</span></div>
+      </div>
+      <p class="breathing-note">Follow the gentle rhythm, or breathe at your own comfortable pace.</p>
+      <div class="timer-controls"><button class="button" id="timer-start">Start my 25 seconds</button><button class="timer-reset" id="timer-reset" disabled>Reset</button></div>
+      <p id="timer-status" class="timer-status" role="status">No rush. This time belongs to you.</p>
+      <a class="continue-link" id="timer-continue" href="reminders.html" hidden>Continue to my little reminders →</a>
+      <noscript><p>Enable JavaScript to use the 25-second timer.</p></noscript>
+    </section>
+  </main>
+  <footer><a class="brand" href="#calm">✿ pause & bloom.</a><p>A softer corner of the internet.</p><button id="motion-toggle" class="motion-toggle" aria-pressed="false">Pause animations</button></footer>
+</body>
+</html>
